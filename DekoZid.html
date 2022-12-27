@@ -3,22 +3,23 @@
     <head>
         <title>Deko Zid</title>
         <style>
-            body {
+            .body {
                 display: block;
                 margin: 0px;
-            }
-            
+            }         
             .deko{
-                font-weight: bold;
+                font-weight: lighter;
+                font-family: papyrus;
                 font-size: 40px;
                 color: rgba(2, 27, 39, 0.76);
-                margin-left: 10%;
+                margin-left: 650px;
             }
             .zid{
-                font-weight: bold;
+                font-weight: bolder;
+                font-family:papyrus;                
                 font-size: 40px;
-                color: rgba(2, 27, 39, 0.76);
-                margin-right: 200px;
+                color: rgba(143, 21, 5, 0.76);
+                margin-right: 200px;     
             }
             .navlink{
                 font-size: 20px;
@@ -26,38 +27,113 @@
                 color:rgba(2, 27, 39, 0.76);
                 margin-left: 100px;
                 cursor:pointer;
+                transition: 1s;
+                font-family:papyrus;          
             }
-            span.navlink:hover, span.navlink:active {
-                    font-size:150%;
-                    transition: 1s;
+            .navlink:hover {
+                    font-size:110%;
+                    transform: scale(1.1);
                 }
-            .navslike  {
-                    width: 370px;
-                    transition: 0.5s all ease-in-out;
-    }
-           
-            .navslike:hover  {
-                    transform: scale(1.5);
-    }
+            .navslike{
+                border-radius: 10px;
+                transition: 0.5s all ease-in-out;
+            }
+            .navslike:hover{
+                transform: scale(1.1);
+            }
+            .izdvojeno{
+                font-size: 25px;
+                padding-left: 45%;
+                font-style:italic;
+                font-family:papyrus;
+            }
+            #navigacija{
+                background-color:rgba(138, 144, 172, 0.753);
+                padding-left: 25%;
+                padding-bottom: 25px;
+                padding-top: 25px;
+            }
+            .article1{
+                margin-top: 10%;
+                padding-left:50px;
+                padding-bottom:150px;
+                float: left;              
+            }
+            .article2{
+                margin-top: 2%;
+                padding-right:50px;
+                padding-bottom:300px;
+                float: right;          
+            }
+            .article11{
+                font-size:25px; 
+                font-family:papyrus; 
+                font-weight:bold; 
+                font-style:italic;
+                transition:0.5s all ease-in-out;
+            }
+            .article22{
+                font-size:25px; 
+                font-family:papyrus; 
+                font-weight:bold; 
+                font-style:italic;
+                transition: 0.5s all ease-in-out;
+            }
+            .article11:hover{
+                transform: scale(1.1);
+            }
+            .article22:hover{
+                transform: scale(1.1);
+            }
+            a{
+                color:rgba(2, 27, 39, 0.76);
             }
         </style>
     </head>
-        <div style="background-color:rgb(197, 132, 132); padding:30px;">
-            <span class="deko">Deko</span>
-            <span class="zid">Zid</span>
-            <span class="navlink">Pocetna strana</span>
-            <span class="navlink">Kontakt</span>
-            <span class="navlink">Projekti</span>
-            <span class="navlink">O nama</span>
+    <header>
+    <div roll="header"; style="background-color:rgb(243, 230, 216); padding:30px;">
+        <span class="deko">Deko</span>
+        <span class="zid">Zid</span>
+    </div>
+    </header>
+      
+    <body style="background-color:rgb(243, 230, 216)">
+        <div id="navigacija">
+            <span class="navlink"><a href="DekoZid.html" >Pocetna strana</a></span>
+            <span class="navlink"><a href="Kontakt.html" >Kontakt</a></span>
+            <span class="navlink"><a href="Galerija.html">Galerija</a></span>
+            <span class="navlink"><a href="oNama.html">O nama</a></span>
         </div>
-        <div style="background-color:beige; padding-left:50px; padding-right:50px;">
-            <img class="navslike" src="D:\Programiranje\DekoZid\slike\slika1.jpg" width="370px" height="300px">
-            <img class="navslike" src="D:\Programiranje\DekoZid\slike\slika2.jpg" width="370px" height="300px">
-            <img class="navslike" src="D:\Programiranje\DekoZid\slike\slika3.jpg" width="370px" height="300px">
-            <img class="navslike" src="D:\Programiranje\DekoZid\slike\slika4.jpg" width="370px" height="300px">
-            
+        
+        <div style="padding-left:50px; padding-right:50px;">
+            <figure></figure>
+                <img class="navslike" src="D:\Programiranje\DekoZid\slike\slika1.jpg" width="360px" height="300px">
+                <img class="navslike" src="D:\Programiranje\DekoZid\slike\slika2.jpg" width="360px" height="300px">
+                <img class="navslike" src="D:\Programiranje\DekoZid\slike\slika3.jpg" width="360px" height="300px">
+                <img class="navslike" src="D:\Programiranje\DekoZid\slike\slika4.jpg" width="360px" height="300px">
+                <br>
+                <figcaption class="izdvojeno">Izdvojeno</figcaption>
+            </figure>
         </div>
-    <body>
-
+        <div role="article" class="article1">
+            <img src="D:\Programiranje\DekoZid\slike\bodyslika3.jpg" height="500px" width="450px" style="border-radius:10px;">
+        </div>
+        <div style="padding-top: 350px; padding-left:700px; padding-bottom:300px; padding-right:50px;">
+            <p class="article11">Ako zelite da oplemenite prostor u Vasem domu i da ostavite bez daha svakog
+            ko udje u Vas dom, ovo je idealno resenje za Vas.</p>
+        </div>
+        <div role="article" class="article2">
+            <img src="D:\Programiranje\DekoZid\slike\bodyslika2.jpg" height="500px" width="450px" style="border-radius:10px;">
+        </div>
+        <div style="padding-top: 100px; padding-left:50px; padding-bottom:300px; padding-right:600px;">
+            <p class="article22">Imitaciju stene radimo sa dugotrajnim materijalima, zid dobija efekat prave 
+                stene, kako na izgled tako i na dodir. Nisu u pitanju tapete ili samolepljive jeftine kineske imitacije. Takodje nasi 
+                radovi su ne samo za enterijer vec i za eksterijer. Imitacija je otporna na sve vremenske uslove.</p>
+        </div>
+        <footer>
+            <div style="background-color:rgba(138, 144, 172, 0.753); padding-top:50px; padding-bottom:100px; margin-top:70px;">
+                <br>
+            </div>
+        </footer>
     </body>
 </html>
